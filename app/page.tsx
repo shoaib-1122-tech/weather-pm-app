@@ -33,7 +33,7 @@ export default function Home() {
       } else {
         setError(data.message || 'City not found');
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       setError('Error loading weather data');
     } finally {
       setLoading(false);
